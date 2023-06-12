@@ -2,6 +2,9 @@
 /shelf/
 /workspace.xml
 
+/target/
+!.mvn/wrapper/maven-wrapper.jar
+
 # Intellij
 .idea/
 *.iml
