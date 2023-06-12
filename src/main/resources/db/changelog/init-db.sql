@@ -2,14 +2,14 @@
 CREATE SEQUENCE hibernate_sequence START 1;
 
 CREATE TABLE car_park (
-    id bigint PRIMARY KEY,
+    id serial PRIMARY KEY,
     car_park_no varchar UNIQUE NOT NULL,
     address varchar NULL,
     coordinate geometry(Geometry, 4326) NOT NULL
 );
 
 CREATE TABLE availability (
-    id bigint PRIMARY KEY,
+    id serial PRIMARY KEY,
     car_park_id bigint NOT NULL,
     total_lots int NULL,
     lots_available int NULL,
